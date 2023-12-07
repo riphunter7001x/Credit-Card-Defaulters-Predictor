@@ -1,5 +1,3 @@
-# app.py
-
 from flask import Flask, render_template, request, send_file
 import pandas as pd
 from sklearn.pipeline import make_pipeline
@@ -27,7 +25,7 @@ def upload_file():
         return render_template('index.html', message='No selected file')
 
     try:
-        # Assuming the input file is a CSV or Excel file
+        # input file is a CSV or Excel file
         input_data = pd.read_csv(file) if file.filename.endswith('.csv') else pd.read_excel(file)
     except pd.errors.EmptyDataError:
         return render_template('index.html', message='File is empty or invalid format')
