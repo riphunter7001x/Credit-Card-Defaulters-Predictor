@@ -4,7 +4,7 @@ Predicting credit card defaulters using machine learning techniques. This projec
 
 ## Key Files and Folders
 
-- `ma_ln.py`: Main Python script for running the credit card default prediction model.
+- `main.py`: Main Python script for running the credit card default prediction model.
 - `model_utils.py`: Utility functions for loading the trained model and making predictions.
 - `random_forest_model.joblib`: Pre-trained Random Forest model for predicting credit card defaulters.
 - `predicted_results.csv`: CSV file containing predicted results based on the model.
